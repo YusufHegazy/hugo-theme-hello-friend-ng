@@ -51,6 +51,22 @@ here is the trace of the factorial operation:
 (* 5 24)
 120
 ```
+
+here's the pythonic version for those who are struggling with lisp (it's way easier believe me)
+```Python
+fact(5)
+5 * fact(4)
+5 * (4 * fact(3))
+5 * (4 * (3 * fact(2)))
+5 * (4 * (3 * (2 * fact(1))))
+5 * (4 * (3 * (2 * (1 * fact(0)))))
+5 * (4 * (3 * (2 * (1 * 1))))
+5 * (4 * (3 * (2 * 1)))
+5 * (4 * (3 * 2))
+5 * (4 * 6)
+5 * 24
+120
+```
 Did you figure out the flaw of our simple recursion implementation yet?
 
 It's pretty simple, the way we expand the factorial on each iteration so that it grows and keeps growing until we fully expand it is just so inefficient and wastes memory space.
@@ -74,6 +90,16 @@ let's rewrite the factorial function in Tail Recursion:
 
 (define (fact x) (fact-tail x 1))
 ```
+### Pythonic version:
+```Python
+def factTail(x, accum):
+	if (x == 0):
+		return accum
+	else:
+		return factTail(x-1, x*accum)
+def fact(x):
+	return factTail(x, 1)
+```
 what we did in that snippet above is pretty simple, we just split the work across two functions, the first function `(fact-tail x accum)` will iterate and the second function `(fact x)` will call the first function and returns the value of each iteration (we have also moved the multiplication operation to it's own variable) so we basically have no extra operations going on, *in fact calling `(fact 0)` is now the same as calling `(fact 10000)` in terms of memory size.*
 
 let's step through each iteration and see for ourselves how great is Tail Recursion:
@@ -87,6 +113,16 @@ let's step through each iteration and see for ourselves how great is Tail Recurs
 (fact-tail 0 120)
 120
 ```
+Pythonic Version:
+```Python
+fact(5)
+factTail(5, 1)
+factTail(4, 5)
+factTail(3, 20)
+factTail(2, 60)
+factTail(1, 120)
+factTail(0, 120)
+```
 is this even recursion anymore, that's just **fancy iteration!**
 
 we have used recursion in such a way that we store all the data to perform our evalutaion in each individual reccured call!
@@ -95,6 +131,7 @@ All Hail Tail Call Optimization!
 ## More Tail Recursion!
 here is one more example with the infamous fibonacci function in both normal Recursion and then Tail Recursion:
 
+*(you try to implement it in python this time :p)*
 ### Normal Recursion
 ```Scheme
 (define (fib x)

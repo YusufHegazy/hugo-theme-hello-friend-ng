@@ -3,6 +3,8 @@ title: "Optimizing Recursion"
 date: 2020-09-24T15:52:30+02:00
 ---
 
+{{< image src="/img/recursion/recursion.png" width="50" alt="Fractal Tree" position="center" style="border-radius: 8px;"  >}}
+
 Recursion is a pretty improtant topic in programming and it's not that hard to grasp or even implement, but how about __actually using it correctly?__
 
 In this blog post i will try to explain the basic concept of recursion and then show why recursion can be so inefficient and how to optimize it using **Call Tail Optimization!**

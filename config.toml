@@ -3,7 +3,7 @@ title        = "My Blog"
 languageCode = "en-us"
 theme        = "hello-friend-ng"
 paginate     = 10
-
+googleAnalytics = "G-2958Z4QE1V"
 [params]
   dateform        = "Jan 2, 2006"
   dateformShort   = "Jan 2"
@@ -29,7 +29,7 @@ paginate     = 10
 
     [[params.social]]
         name = "twitter"
-        url  = "https://twitter.com/TheHegazy"
+        url  = "https://twitter.com/hegzploit"
 
     [[params.social]]
         name = "github"
@@ -45,7 +45,7 @@ paginate     = 10
 
     [[params.social]]
         name = "youtube"
-        url  = "https://www.youtube.com/channel/UC2WSs0NTQl1UKvB6KpMVHlA"
+        url  = "https://www.youtube.com/c/hegzploit/"
 
 
 

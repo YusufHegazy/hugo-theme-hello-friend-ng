@@ -3,7 +3,7 @@ title        = "My Blog"
 languageCode = "en-us"
 theme        = "hello-friend-ng"
 paginate     = 10
-googleAnalytics = "G-2958Z4QE1V"
+googleAnalytics = "UA-184239437-2"
 [params]
   dateform        = "Jan 2, 2006"
   dateformShort   = "Jan 2"

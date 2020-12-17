@@ -25,7 +25,7 @@ googleAnalytics = "UA-184239437-2"
   images = [""]
 
   # Default theme "light" or "dark"
-  defaultTheme = "dark"
+  defaultTheme = "light"
 
     [[params.social]]
         name = "twitter"

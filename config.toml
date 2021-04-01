@@ -1,14 +1,16 @@
-baseurl      = "https://yusufhegazy.github.io/"
-title        = "My Blog"
+baseurl      = "https://hegz.me/"
+title        = "Hegzploit"
 languageCode = "en-us"
 theme        = "hello-friend-ng"
 paginate     = 10
 googleAnalytics = "UA-184239437-2"
+enableEmoji = true
 [params]
   dateform        = "Jan 2, 2006"
   dateformShort   = "Jan 2"
   dateformNum     = "2006-01-02"
   dateformNumTime = "2006-01-02 15:04 -0700"
+
 
   # Subtitle for home
   homeSubtitle = "Computer Junkie and an Infosec Enthusiast"
@@ -20,8 +22,8 @@ googleAnalytics = "UA-184239437-2"
   enableSharingButtons = true
 
   # Metadata mostly used in document's head
-  description = "My new homepage or blog"
-  keywords = "homepage, blog"
+  description = "My personal blog in which I post Cybersecurity related content, or generaly anything I find interesting."
+  keywords = "homepage, blog, hegzploit, hegazy, yusuf, yusufhegazy, yusuf hegazy, hegz"
   images = [""]
 
   # Default theme "light" or "dark"
@@ -41,7 +43,7 @@ googleAnalytics = "UA-184239437-2"
 
     [[params.social]]
         name = "email"
-        url  = "mailto:me@yusufhegazy.com"
+        url  = "mailto:me@hegz.me"
 
     [[params.social]]
         name = "youtube"
@@ -64,7 +66,7 @@ googleAnalytics = "UA-184239437-2"
 
     [languages.en.params.logo]
       logoText = "$ cd /home/"
-      logoCursorColor = "#7df5ab"
+      logoCursorColor = "#00FF00"
       logoCursorAnimate  = "1.2s"
       logoHomeLink = "/"
     # or
@@ -77,3 +79,7 @@ googleAnalytics = "UA-184239437-2"
     identifier = "blog"
     name       = "Blog"
     url        = "/posts"
+  [[menu.main]]
+    identifier = "writeups"
+    name       = "Writeups"
+    url        = "/writeups"

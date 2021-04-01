@@ -1,5 +1,5 @@
 ---
-title: Not Really AI (Pwn - 200 Points)
+title: Not Really AI (RA CTF)
 created: '2020-06-08T07:22:58.064Z'
 modified: '2020-06-09T17:49:21.090Z'
 ---
